@@ -15,6 +15,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "diagram.html",
+			"settings":
+			{
+				"buffer_size": 466,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 6429,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -209,8 +225,63 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "diagram.html",
+					"settings":
+					{
+						"buffer_size": 466,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								96,
+								96
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 6429,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1561,
+								1561
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -273,7 +344,7 @@
 		[
 			[
 				"",
-				"/Z/Public/webDevelopment/projects/sampleSubProject/sampleSubProject.sublime-project"
+				"/Z/Public/$$$Feirstein/Development/004/feirstein/Feirstein.sublime-project"
 			]
 		],
 		"width": 380.0
