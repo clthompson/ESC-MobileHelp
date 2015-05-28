@@ -15,54 +15,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "scss/proj-name.scss",
-			"settings":
-			{
-				"buffer_size": 2128,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "scss/_local_var.scss",
-			"settings":
-			{
-				"buffer_size": 134,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "scss/_local_css.scss",
-			"settings":
-			{
-				"buffer_size": 569,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 6428,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Content Classes/contentPage.con",
-			"settings":
-			{
-				"buffer_size": 1636,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Content Classes/headerScripts.con",
-			"settings":
-			{
-				"buffer_size": 1010,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -132,9 +84,8 @@
 	},
 	"file_history":
 	[
-		"/Z/Public/webDevelopment/projects/sampleSubProject/diagram.html",
-		"/Z/Public/webDevelopment/projects/sampleSubProject/working.html",
-		"/Z/Public/webDevelopment/projects/sampleSubProject/sampleSubProject.sublime-project",
+		"/Z/Public/webDevelopment/projects/Comm-HealthAndWellness/Content Classes/contentPage.con",
+		"/Z/Public/webDevelopment/projects/Comm-HealthAndWellness/scss/_local_var.scss",
 		"/Z/Public/webDevelopment/projects/Comm-HealthAndWellness/css/app.css",
 		"/Z/Public/webDevelopment/master/scss/_custom.scss",
 		"/Z/Public/webDevelopment/master/css/app.css",
@@ -258,172 +209,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "scss/proj-name.scss",
-					"settings":
-					{
-						"buffer_size": 2128,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1061,
-								1038
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "scss/_local_var.scss",
-					"settings":
-					{
-						"buffer_size": 134,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								37,
-								37
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "scss/_local_css.scss",
-					"settings":
-					{
-						"buffer_size": 569,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								211,
-								211
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "index.html",
-					"settings":
-					{
-						"buffer_size": 6428,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5828,
-								5828
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1559.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "Content Classes/contentPage.con",
-					"settings":
-					{
-						"buffer_size": 1636,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								365,
-								365
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Content Classes/headerScripts.con",
-					"settings":
-					{
-						"buffer_size": 1010,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -486,7 +273,7 @@
 		[
 			[
 				"",
-				"/Z/Public/webDevelopment/projects/Comm-HealthAndWellness/Comm-HealthAndWellness.sublime-project"
+				"/Z/Public/webDevelopment/projects/sampleSubProject/sampleSubProject.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -495,6 +282,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 205.0,
+	"side_bar_width": 307.0,
 	"status_bar_visible": true
 }
