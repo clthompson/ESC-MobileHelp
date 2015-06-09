@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"font-",
+				"font-size"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"color-gray",
+				"color-gray515"
+			],
+			[
+				"thick",
+				"thick-blue"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
 				"di",
 				"DIV	Tag"
 			],
@@ -24,10 +48,18 @@
 			}
 		},
 		{
+			"file": "scss/_local_css.scss",
+			"settings":
+			{
+				"buffer_size": 5677,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 6429,
+				"buffer_size": 5716,
 				"line_ending": "Windows"
 			}
 		}
@@ -83,7 +115,7 @@
 				"Set Syntax: HTML"
 			]
 		],
-		"width": 440.0
+		"width": 512.0
 	},
 	"console":
 	{
@@ -256,18 +288,46 @@
 				},
 				{
 					"buffer": 1,
-					"file": "index.html",
+					"file": "scss/_local_css.scss",
 					"settings":
 					{
-						"buffer_size": 6429,
+						"buffer_size": 5677,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1561,
-								1561
+								3926,
+								3926
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1759.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 5716,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3096,
+								3096
 							]
 						],
 						"settings":
@@ -277,7 +337,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 45.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -344,7 +404,7 @@
 		[
 			[
 				"",
-				"/Z/Public/$$$Feirstein/Development/004/feirstein/Feirstein.sublime-project"
+				"/Z/Public/webDevelopment/master/MASTER.sublime-project"
 			]
 		],
 		"width": 380.0

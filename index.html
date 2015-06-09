@@ -11,7 +11,7 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
 
-    <link rel="home" href="HOME URL" />
+    <link rel="home" href="http://www.brooklyn.cuny.edu/web/about/administration/enrollment/esc.php" />
     <link rel="canonical" href="PAGE URL" />
 
     <link rel="shortcut icon" type="image/ico" href="http://www.brooklyn.cuny.edu/web/ICO URL" />
@@ -54,95 +54,96 @@
   </head>
 
   <body data-responsejs='{"create" : {"mode" : "src", "prefix" : "src"}}'>
-    <header class="row">
-      <div class="large-12 columns">
-        <h1>Brooklyn College Foundation Setup</h1>
-        <h4>This is a small page with a number of rows, explaining how to setup the most basic site layout, as well as provide links to the various JS code elements, etc.</h4>
-        <p>All other styling happens of a per project basis. The use of the PANEL style is for visualization on this page only.</p>
-      </div>
-    </header>
-    
-    <section class="row">
-      <div class="large-12 columns panel">
-        <h2>The Grid</h2>
-        <p>The default BC grid has 12 columns, and max-width of 1080px. Each row (this is a row) spans the full width of the grid, and contains content elements that use column width styles for size and arrangement at each breakpoint. This is a 12-column content element at the large size. The grid has zones of presentation:</p>
-        <ul>
-          <li>Xlarge - above 1441px</li>
-          <li>Large - between 1440 and 849px</li>
-          <li>Medium - between 848px and 641px</li>
-          <li>Small - smaller than 640px</li>
-        </ul>
-      </div>
-    </section>
 
-    <section class="row">
-      <div class="large-12 columns panel">
-        <h2>Column Content Elements</h2>
-        <p>Rows are filled with content elements that can respond to the presentation zones. Add styles to these elements:</p>
-        <ul>
-          <li>columns - add to all content elements</li>
-          <li>large-X</li>
-          <li>medium-X</li>
-          <li>small-X</li>
-        </ul>
-        <p>If there is no definition for the specific zone, the content element will fill the grid 100%. This allows for some elements to maintain a column definition while other abandon it as screens change. You can even nest rows within content elements, like this:</p>
-        <div class="row">
-          <div class="large-4 medium-6 small-6 columns panel">
-             <p>4-column L, 6-column M,S content element nested within the 12-column main content element.</p>
-          </div>
-          <div class="large-6 medium-6 small-6 columns panel">
-            <p>6-column L,M,S content element nested within the 12-column main content element.</p>
-          </div>
-          <div class="large-2 columns panel">
-            <p>2-column L content element nested within the 12-column main content element.</p>
-          </div>        
+    <!-- header -->
+    <div class="full-width headerbar">
+      <header class="row">
+      <div class="small-6 small-centered columns">
+        <!-- section object -->
+        <div class="sectionObject">
+          <img class="logoimg" src="http://www.brooklyn.cuny.edu/web/adm_2013marketing/logo.png" alt="Brooklyn College logo"/>
         </div>
+        <!-- end section object -->
       </div>
+      </header>
+    </div>
+    
+    <!-- content -->
+    <section class="content">
+      <section class="row ">
+        <div class="medium-6 columns right">
+          <div class="sectionObject">
+            <img src="http://www.brooklyn.cuny.edu/web/adm_2013marketing/trans.gif" 
+              alt="Alt Tag" title="Alt Tag"
+              data-src0="images/300x500.jpg"
+              data-src768="images/400x667.jpg" 
+              data-src1020="images/600x1000.jpg" />
+          </div>
+        </div>
+        <div class="medium-6 columns">
+          <div class="sectionObject">
+            <p>Here is a 6-column L content element. Here is a 6-column L content element. Here is a 6-column L content element. Here is a 6-column L content element. Here is a 6-column L content element. Here is a 6-column L content element.</p>
+          </div>
+        </div>
+      </section>
     </section>
 
-    <section class="row">
-      <div class="large-6 columns panel">
-        <p>Here is a 6-column L content element.</p>
-      </div>
-      <div class="large-6 columns panel">
-        <p>Here is a 6-column L content element.</p>
-      </div>
-    </section>
+    <!-- buttons -->
+    <div class="full-width buttonbar">
+      <section class="row">
+        <div class="medium-6 small-4 columns clearfix">
+          <div class="sectionObject">
+            <div class="buttonW">
+              <a href="#">
+                <div class="buttons right">
+                  <img src="http://www.brooklyn.cuny.edu/web/adm_2013marketing/logo.png">
+                  <p>like us on facebook</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="medium-6 small-8 columns clearfix">
+          <div class="sectionObject">
+            <div class="buttonW">
+              <a href="#">
+                <div class="buttons">
+                  <img src="http://www.brooklyn.cuny.edu/web/adm_2013marketing/logo.png">
+                  <p>GO TO FULL WEBSITE</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
-    <section class="row">
-      <div class="large-9 medium-9 columns panel">
-        <p>Here is a 9-column L,M content element.</p>
-      </div>
-      <div class="large-3 medium-3 columns panel">
-        <p>Here is a 3-column L,M content element.</p>
-      </div>
-    </section>
 
-    <section class="row">
-      <div class="large-12 columns panel">
-        <h2>Media Queries</h2>
-        <p>Specific content elements can also break independently of the grid with media queries:</p>
-        <ul>
-          <li>Desktop - 850px or more</li>
-          <li>iPadPortrait - less than 850px</li>
-          <li>Phone - less than 768px</li>
-          <li>Five00 - less than 500px</li>
-        </ul>
-      </div>
-    </section>
 
-    <footer class="row">
-      <div class="large-12 columns panel">
-        <h2>Footer Row</h2>
-        <p>Example of a footer.</p>
-        <ul>
-          <li>li 1</li>
-          <li>li 2</li>
-          <li>li 3</li>
-          <li>li 4</li>
-        </ul>
-      </div>
-    </footer>
+
+
+
+            
+
+    <!-- footer -->
+    <div class="full-width footerbar">
+      <footer class="row">
+        <div class="small-12 columns">
+          <div class="sectionObject">
+            <div ID="cunyBC">
+              <div ID="CUNY"> 
+                <img src="images/CUNY_88x43.png" alt="CUNY logo"/>
+              </div>
+              <div ID="address">    
+                <p>&copy; 2015 All Rights Reserved Brooklyn College<br />
+                2900 Bedford Avenue, Brooklyn, NY 11210<br />
+                718.951.5000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
 
     <!-- Foundation JS and additional scripts -->
     <script src="http://www.brooklyn.cuny.edu/web/js/foundation/bower_components/foundation/js/foundation.min.js"></script>
