@@ -55,6 +55,7 @@
   $color-gray8f8: #8f8f8f;
   $color-grayc3c: #c3c3c3;
   $color-grayf0f: #f0f0f0;
+  $color-gray818: #818181;
   $color-blue: #3b7ddb;
   $color-red: #d30043;
   $color-orange: #e34913;
@@ -73,10 +74,20 @@
   $thin-gray929: 1px solid $color-gray929;
   $thin-gray505: 1px solid $color-gray505;
   $thin-gray8f8: 1px solid $color-gray8f8;
+  $thin-gray818: 1px solid $color-gray818;
 
 body {
   background-color: $color-white;
   font-family: $font-lucida;
+}
+
+a {
+  color: $color-maroon;
+  font-weight: $bold;
+  text-decoration: none;
+  &:hover{
+    color: $color-gray666;
+  }
 }
 
 .full-width {
@@ -97,6 +108,8 @@ header {
     margin-right: auto;
     padding: 4px 0px 4px 0px;
     border:none;
+    width: 88px;
+    height: 45px;
   }
 	nav {
 
@@ -108,92 +121,148 @@ header {
 
 // Content
 .content { // content
-  padding: rem-calc(30) rem-calc(7) rem-calc(40) rem-calc(7);
+  //border: $thin-gray929;
+  padding: rem-calc(30) rem-calc(10) rem-calc(15) rem-calc(10);
+  margin: 0 rem-calc(10) 0 rem-calc(10);
+  @media #{$Small} {
+    padding: rem-calc(30) rem-calc(0) rem-calc(40) rem-calc(0);
+  }
   .sectionObject {
-    h1 {
-      //border: $thin-gray929;
-      font-family: 'ComeniaSansCondRegular';
-      font-size: $h1-font-size;
-      color: $color-black;
-      border-bottom: $thick-blue;
-      text-transform: uppercase;
-      //padding: 0;
-      margin: 0 0 9px 0;
-      line-height: 23px;
-      letter-spacing: 1px;
-    }
-    h2 {
-      //border: $thin-gray929;
-      font-family: 'ComeniaSansCondRegular';
-      font-size: $h2-font-size;
-      color: $color-black;
-      border-bottom: $thick-maroon3;
-      text-transform: uppercase;
-      margin: 16px 0 9px 0;
-      line-height: 23px;
-      letter-spacing: 1px;
-      &:nth-last-of-type(2){
-        border-bottom: $thick-orange;
+    .textContent {
+      padding-right: rem-calc(18);
+      @media #{$Small} {
+        padding: 0;
       }
-      &:nth-last-of-type(3){
-        border-bottom: $thick-red;
+      h1 {
+        //border: $thin-gray929;
+        font-family: 'ComeniaSansCondRegular';
+        font-size: $h1-font-size;
+        color: $color-black;
+        border-bottom: $thick-blue;
+        text-transform: uppercase;
+        //padding: 0;
+        margin: 0 0 9px 0;
+        line-height: 26px;
+        @media #{$Small} {
+          font-size: ($h1-font-size - rem-calc(6));
+          line-height: 20px;
+          margin: 0 0 5px 0;
+        }
       }
-    }
-    h3 {
-      //border: $thin-gray929;
-      font-family: 'ComeniaSansCondRegular';
-      font-size: $h3-font-size;
-      color: $color-gray515;
-      text-transform: uppercase;
-      margin: 16px 0 6px 0;
-      line-height: 15px;
-      letter-spacing: 1px;
-    }
-    p {
-      //border: $thin-gray929;
-      font-size: $paragraph-font-size;
-      color: $color-gray404;
-      margin: rem-calc(11) 0 rem-calc(26) 0;
-      line-height: 22px;
+      h2 {
+        //border: $thin-gray929;
+        font-family: 'ComeniaSansCondRegular';
+        font-size: $h2-font-size;
+        color: $color-black;
+        border-bottom: $thick-maroon3;
+        text-transform: uppercase;
+        margin: 28px 0 6px 0;
+        line-height: 26px;
+        &:nth-last-of-type(2) {
+          border-bottom: $thick-orange;
+        }
+        &:nth-last-of-type(3) {
+          border-bottom: $thick-red;
+        }
+        @media #{$Small} {
+          font-size: ($h2-font-size - rem-calc(6));
+          line-height: 20px;
+          margin: 35px 0 6px 0;
+        }
+      }
+      h3 {
+        //border: $thin-gray929;
+        font-family: 'ComeniaSansCondRegular';
+        font-size: $h3-font-size;
+        color: $color-gray515;
+        text-transform: uppercase;
+        margin: 16px 0 3px 0;
+        line-height: 23px;
+        @media #{$Small} {
+          font-size: ($h3-font-size - rem-calc(4));
+          line-height: 19px;
+          margin: 10px 0 1px 0;
+        }
+      }
+      p {
+        //border: $thin-gray929;
+        font-size: $paragraph-font-size;
+        color: $color-gray404;
+        margin: rem-calc(11) 0 rem-calc(26) 0;
+        &:last-of-type {
+          margin-bottom: rem-calc(10);
+        }
+        line-height: 22px;
+        @media #{$Small} {
+          font-size: ($paragraph-font-size - rem-calc(2));
+          line-height: 20px;
+          margin: rem-calc(5) 0 rem-calc(28) 0;
+        }
+      }
     }
     img {
-
+      padding: 0 0 rem-calc(30) rem-calc(18);
+      //@media #{$medium} {
+      //  padding: 0 0 rem-calc(30) rem-calc(18);
+      //}
+      @media #{$Phone} {
+        padding: 0 0 rem-calc(30) rem-calc(0);
+      }
+      @media #{$Small} {
+        padding: 0 0 rem-calc(30) 0;
+      }
     }
-}
+  }
 }
 	
   .sectionObject { // insides of each column setup 
-    border: $thin-gray929;
-    padding: rem-calc(0) rem-calc(18) rem-calc(0) rem-calc(18);
+    //border: $thin-gray929;
+    padding: 0;
     margin: 0;
     .buttonW {
-      margin: rem-calc(12) 0 rem-calc(12) 0;
+      height: 45px;
+      margin: rem-calc(6) rem-calc(18) rem-calc(6) rem-calc(18);
+      @media #{$Small} {
+        margin: rem-calc(6) rem-calc(9) rem-calc(6) rem-calc(9);
+      }
       .buttons {
         //&.fRight {
         //  float: right;
         //}
         display: table;
         //height: rem-calc(36);        
-        padding: 0px 10px 0px 0;
+        padding: 0px 10px 0px 0px;
         //margin: 15px 0px 15px 0px;
         background-color: $color-gray969;
-        border: $thin-gray929;
+        border: $thin-gray818;
+        //@media #{$Small} {
+          //width: 100%;
+          //padding: 0px 5px 0px 5px;
+        //}
         &:hover {
           background-color: $color-gray222;
           border: $thin-gray505;
         }
         img {
-          height: 20px;
-          width: 20px;
+          width: 19px;
+          height: 31px;
           display: table-cell;
           float: left;
-          margin: rem-calc(8) rem-calc(5) rem-calc(8) rem-calc(5);
+          margin: rem-calc(6) rem-calc(0) rem-calc(6) rem-calc(5);
         }
         p {
+          height: 45px;
+          font-size: rem-calc(15);
+          padding-left: rem-calc(10);
           color: $color-white;
           display: table-cell;
           vertical-align: middle;
-          line-height: 14px;
+          line-height: 16px;
+          //text-transform: none;
+          @media #{$Small} {
+            font-size: rem-calc(12);
+            line-height: 14px;
+          }
         }
       }
     }
@@ -202,36 +271,62 @@ header {
 .buttonbar {
   background-color: $color-grayf0f;
   height: rem-calc(60);
+  border-top: $thin-gray929;
 }
 
 .footerbar {
   background-color: $color-grayc3c;
   height: rem-calc(70);
-  
+  border-top: $thin-gray929;
+  @media #{$Small} {
+    height: rem-calc(50);
+  }
 }
 
 //Footer
 footer {
   //padding-left: rem-calc(10);
   .sectionObject { // insides of each column setup 
-    padding: rem-calc(15) rem-calc(0) rem-calc(0) rem-calc(10);
+    padding: rem-calc(15) rem-calc(0) rem-calc(0) rem-calc(0);
+    @media #{$Small} {
+      padding: rem-calc(8) rem-calc(0) rem-calc(0) rem-calc(0);
+    }
     #cunyBC {
-      padding: 0px 0px 0px 10px;
+      padding: rem-calc(0) rem-calc(0) rem-calc(0) rem-calc(10);
+      @media #{$Small} {
+        padding: rem-calc(0) rem-calc(0) rem-calc(0) rem-calc(5);
+      }
       #CUNY {
         width: 88px;
         float: left;
         height: 43px;
+        @media #{$Small} {
+          width: 76px;
+          height: 37px;
+        }
       }
       #address {
         margin-left: 90px;
         padding-left: 5px;
-        p{
-          font-size: .6em;
-          color: #555555;
-          border-left: 1px solid #a9a9a9;
-          padding-left: 7px;
+        @media #{$Small} {
+          margin-left: 78px;
+          padding-left: 5px;
+        }
+        p {
+          font-size: rem-calc(12);
+          line-height: 16px;
+          color: $color-gray6a6;
+          border-left: $thin-gray8f8;
+          padding-left: rem-calc(7);
           margin:-2px 0px 0px 0px;
-          padding-top: 0px;
+          padding-top: 0;
+          @media #{$Small} {
+            font-size: rem-calc(11);
+            line-height: 14px;
+          }
+        }
+        a {
+          font-weight: normal;
         }
       }
     }

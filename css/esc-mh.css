@@ -170,20 +170,20 @@ meta.foundation-mq-small {
 
 /* line 356, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-mq-small-only {
-  font-family: "/only screen and (max-width: 40em)/";
+  font-family: "/only screen and (max-width: 47em)/";
   width: 0em;
 }
 
 /* line 361, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-mq-medium {
-  font-family: "/only screen and (min-width:40.063em)/";
-  width: 40.063em;
+  font-family: "/only screen and (min-width:47.063em)/";
+  width: 47.063em;
 }
 
 /* line 366, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-mq-medium-only {
-  font-family: "/only screen and (min-width:40.063em) and (max-width:64em)/";
-  width: 40.063em;
+  font-family: "/only screen and (min-width:47.063em) and (max-width:64em)/";
+  width: 47.063em;
 }
 
 /* line 371, ../bower_components/foundation/scss/foundation/components/_global.scss */
@@ -777,7 +777,7 @@ select {
     float: left;
   }
 }
-@media only screen and (min-width: 40.063em) {
+@media only screen and (min-width: 47.063em) {
   /* line 159, ../bower_components/foundation/scss/foundation/components/_grid.scss */
   .medium-push-0 {
     position: relative;
@@ -1889,7 +1889,7 @@ select {
   }
 }
 /* medium displays */
-@media only screen and (min-width: 40.063em) {
+@media only screen and (min-width: 47.063em) {
   /* line 244, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
   .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .show-for-medium-only, .show-for-medium-up, .show-for-medium, .show-for-medium-down, .hide-for-large-only, .hide-for-large-up, .hide-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .show-for-xxlarge-down {
     display: inherit !important;
@@ -2356,160 +2356,301 @@ th.hide-for-touch {
   }
 }
 /* CSS Document */
-/* line 77, ../scss/_local_css.scss */
+/* line 79, ../scss/_local_css.scss */
 body {
   background-color: #fff;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
 }
 
-/* line 82, ../scss/_local_css.scss */
+/* line 84, ../scss/_local_css.scss */
+a {
+  color: #781a42;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* line 88, ../scss/_local_css.scss */
+a:hover {
+  color: #666;
+}
+
+/* line 93, ../scss/_local_css.scss */
 .full-width {
   width: 100%;
   max-width: 100%;
 }
 
-/* line 87, ../scss/_local_css.scss */
+/* line 98, ../scss/_local_css.scss */
 .headerbar {
   background-image: url("http://www.brooklyn.cuny.edu/web/adm_2013marketing/logobar.png");
   height: 2.8125rem;
 }
 
-/* line 94, ../scss/_local_css.scss */
+/* line 105, ../scss/_local_css.scss */
 header .logoimg {
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 4px 0px 4px 0px;
   border: none;
+  width: 88px;
+  height: 45px;
 }
 
-/* line 110, ../scss/_local_css.scss */
+/* line 123, ../scss/_local_css.scss */
 .content {
-  padding: 1.875rem 0.4375rem 2.5rem 0.4375rem;
+  padding: 1.875rem 0.625rem 0.9375rem 0.625rem;
+  margin: 0 0.625rem 0 0.625rem;
 }
-/* line 113, ../scss/_local_css.scss */
-.content .sectionObject h1 {
+@media screen and (max-width: 640px) {
+  /* line 123, ../scss/_local_css.scss */
+  .content {
+    padding: 1.875rem 0 2.5rem 0;
+  }
+}
+/* line 131, ../scss/_local_css.scss */
+.content .sectionObject .textContent {
+  padding-right: 1.125rem;
+}
+@media screen and (max-width: 640px) {
+  /* line 131, ../scss/_local_css.scss */
+  .content .sectionObject .textContent {
+    padding: 0;
+  }
+}
+/* line 136, ../scss/_local_css.scss */
+.content .sectionObject .textContent h1 {
   font-family: 'ComeniaSansCondRegular';
   font-size: 1.875rem;
   color: #000;
   border-bottom: 3px solid #3b7ddb;
   text-transform: uppercase;
   margin: 0 0 9px 0;
-  line-height: 23px;
-  letter-spacing: 1px;
+  line-height: 26px;
 }
-/* line 125, ../scss/_local_css.scss */
-.content .sectionObject h2 {
+@media screen and (max-width: 640px) {
+  /* line 136, ../scss/_local_css.scss */
+  .content .sectionObject .textContent h1 {
+    font-size: 1.5rem;
+    line-height: 20px;
+    margin: 0 0 5px 0;
+  }
+}
+/* line 152, ../scss/_local_css.scss */
+.content .sectionObject .textContent h2 {
   font-family: 'ComeniaSansCondRegular';
   font-size: 1.875rem;
   color: #000;
   border-bottom: 3px solid #7a203d;
   text-transform: uppercase;
-  margin: 16px 0 9px 0;
-  line-height: 23px;
-  letter-spacing: 1px;
+  margin: 28px 0 6px 0;
+  line-height: 26px;
 }
-/* line 135, ../scss/_local_css.scss */
-.content .sectionObject h2:nth-last-of-type(2) {
+/* line 161, ../scss/_local_css.scss */
+.content .sectionObject .textContent h2:nth-last-of-type(2) {
   border-bottom: 3px solid #e34913;
 }
-/* line 138, ../scss/_local_css.scss */
-.content .sectionObject h2:nth-last-of-type(3) {
+/* line 164, ../scss/_local_css.scss */
+.content .sectionObject .textContent h2:nth-last-of-type(3) {
   border-bottom: 3px solid #d30043;
 }
-/* line 142, ../scss/_local_css.scss */
-.content .sectionObject h3 {
+@media screen and (max-width: 640px) {
+  /* line 152, ../scss/_local_css.scss */
+  .content .sectionObject .textContent h2 {
+    font-size: 1.5rem;
+    line-height: 20px;
+    margin: 35px 0 6px 0;
+  }
+}
+/* line 173, ../scss/_local_css.scss */
+.content .sectionObject .textContent h3 {
   font-family: 'ComeniaSansCondRegular';
   font-size: 1.375rem;
   color: #515151;
   text-transform: uppercase;
-  margin: 16px 0 6px 0;
-  line-height: 15px;
-  letter-spacing: 1px;
+  margin: 16px 0 3px 0;
+  line-height: 23px;
 }
-/* line 152, ../scss/_local_css.scss */
-.content .sectionObject p {
+@media screen and (max-width: 640px) {
+  /* line 173, ../scss/_local_css.scss */
+  .content .sectionObject .textContent h3 {
+    font-size: 1.125rem;
+    line-height: 19px;
+    margin: 10px 0 1px 0;
+  }
+}
+/* line 187, ../scss/_local_css.scss */
+.content .sectionObject .textContent p {
   font-size: 1.0625rem;
   color: #404040;
   margin: 0.6875rem 0 1.625rem 0;
   line-height: 22px;
 }
+/* line 192, ../scss/_local_css.scss */
+.content .sectionObject .textContent p:last-of-type {
+  margin-bottom: 0.625rem;
+}
+@media screen and (max-width: 640px) {
+  /* line 187, ../scss/_local_css.scss */
+  .content .sectionObject .textContent p {
+    font-size: 0.9375rem;
+    line-height: 20px;
+    margin: 0.3125rem 0 1.75rem 0;
+  }
+}
+/* line 203, ../scss/_local_css.scss */
+.content .sectionObject img {
+  padding: 0 0 1.875rem 1.125rem;
+}
+@media screen and (max-width: 767px) {
+  /* line 203, ../scss/_local_css.scss */
+  .content .sectionObject img {
+    padding: 0 0 1.875rem 0;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 203, ../scss/_local_css.scss */
+  .content .sectionObject img {
+    padding: 0 0 1.875rem 0;
+  }
+}
 
-/* line 165, ../scss/_local_css.scss */
+/* line 218, ../scss/_local_css.scss */
 .sectionObject {
-  border: 1px solid #929292;
-  padding: 0 1.125rem 0 1.125rem;
+  padding: 0;
   margin: 0;
 }
-/* line 169, ../scss/_local_css.scss */
+/* line 222, ../scss/_local_css.scss */
 .sectionObject .buttonW {
-  margin: 0.75rem 0 0.75rem 0;
+  height: 45px;
+  margin: 0.375rem 1.125rem 0.375rem 1.125rem;
 }
-/* line 171, ../scss/_local_css.scss */
+@media screen and (max-width: 640px) {
+  /* line 222, ../scss/_local_css.scss */
+  .sectionObject .buttonW {
+    margin: 0.375rem 0.5625rem 0.375rem 0.5625rem;
+  }
+}
+/* line 228, ../scss/_local_css.scss */
 .sectionObject .buttonW .buttons {
   display: table;
-  padding: 0px 10px 0px 0;
+  padding: 0px 10px 0px 0px;
   background-color: #969696;
-  border: 1px solid #929292;
+  border: 1px solid #818181;
 }
-/* line 181, ../scss/_local_css.scss */
+/* line 242, ../scss/_local_css.scss */
 .sectionObject .buttonW .buttons:hover {
   background-color: #222;
   border: 1px solid #505050;
 }
-/* line 185, ../scss/_local_css.scss */
+/* line 246, ../scss/_local_css.scss */
 .sectionObject .buttonW .buttons img {
-  height: 20px;
-  width: 20px;
+  width: 19px;
+  height: 31px;
   display: table-cell;
   float: left;
-  margin: 0.5rem 0.3125rem 0.5rem 0.3125rem;
+  margin: 0.375rem 0 0.375rem 0.3125rem;
 }
-/* line 192, ../scss/_local_css.scss */
+/* line 253, ../scss/_local_css.scss */
 .sectionObject .buttonW .buttons p {
+  height: 45px;
+  font-size: 0.9375rem;
+  padding-left: 0.625rem;
   color: #fff;
   display: table-cell;
   vertical-align: middle;
-  line-height: 14px;
+  line-height: 16px;
+}
+@media screen and (max-width: 640px) {
+  /* line 253, ../scss/_local_css.scss */
+  .sectionObject .buttonW .buttons p {
+    font-size: 0.75rem;
+    line-height: 14px;
+  }
 }
 
-/* line 202, ../scss/_local_css.scss */
+/* line 271, ../scss/_local_css.scss */
 .buttonbar {
   background-color: #f0f0f0;
   height: 3.75rem;
+  border-top: 1px solid #929292;
 }
 
-/* line 207, ../scss/_local_css.scss */
+/* line 277, ../scss/_local_css.scss */
 .footerbar {
   background-color: #c3c3c3;
   height: 4.375rem;
+  border-top: 1px solid #929292;
+}
+@media screen and (max-width: 640px) {
+  /* line 277, ../scss/_local_css.scss */
+  .footerbar {
+    height: 3.125rem;
+  }
 }
 
-/* line 216, ../scss/_local_css.scss */
+/* line 289, ../scss/_local_css.scss */
 footer .sectionObject {
-  padding: 0.9375rem 0 0 0.625rem;
+  padding: 0.9375rem 0 0 0;
 }
-/* line 218, ../scss/_local_css.scss */
+@media screen and (max-width: 640px) {
+  /* line 289, ../scss/_local_css.scss */
+  footer .sectionObject {
+    padding: 0.5rem 0 0 0;
+  }
+}
+/* line 294, ../scss/_local_css.scss */
 footer .sectionObject #cunyBC {
-  padding: 0px 0px 0px 10px;
+  padding: 0 0 0 0.625rem;
 }
-/* line 220, ../scss/_local_css.scss */
+@media screen and (max-width: 640px) {
+  /* line 294, ../scss/_local_css.scss */
+  footer .sectionObject #cunyBC {
+    padding: 0 0 0 0.3125rem;
+  }
+}
+/* line 299, ../scss/_local_css.scss */
 footer .sectionObject #cunyBC #CUNY {
   width: 88px;
   float: left;
   height: 43px;
 }
-/* line 225, ../scss/_local_css.scss */
+@media screen and (max-width: 640px) {
+  /* line 299, ../scss/_local_css.scss */
+  footer .sectionObject #cunyBC #CUNY {
+    width: 76px;
+    height: 37px;
+  }
+}
+/* line 308, ../scss/_local_css.scss */
 footer .sectionObject #cunyBC #address {
   margin-left: 90px;
   padding-left: 5px;
 }
-/* line 228, ../scss/_local_css.scss */
+@media screen and (max-width: 640px) {
+  /* line 308, ../scss/_local_css.scss */
+  footer .sectionObject #cunyBC #address {
+    margin-left: 78px;
+    padding-left: 5px;
+  }
+}
+/* line 315, ../scss/_local_css.scss */
 footer .sectionObject #cunyBC #address p {
-  font-size: .6em;
-  color: #555555;
-  border-left: 1px solid #a9a9a9;
-  padding-left: 7px;
+  font-size: 0.75rem;
+  line-height: 16px;
+  color: #6a6a6a;
+  border-left: 1px solid #8f8f8f;
+  padding-left: 0.4375rem;
   margin: -2px 0px 0px 0px;
-  padding-top: 0px;
+  padding-top: 0;
+}
+@media screen and (max-width: 640px) {
+  /* line 315, ../scss/_local_css.scss */
+  footer .sectionObject #cunyBC #address p {
+    font-size: 0.6875rem;
+    line-height: 14px;
+  }
+}
+/* line 328, ../scss/_local_css.scss */
+footer .sectionObject #cunyBC #address a {
+  font-weight: normal;
 }

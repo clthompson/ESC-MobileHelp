@@ -7,3 +7,6 @@
 
 //$h1-font-size: rem-calc(200); 
 //.examplestyle{weight:$h1-font-size;}
+
+$small-range: (0em, 47em); // (0em, 40em); (0-768px)
+$medium-range: (47.063em, 64em); // (40.063em, 64em); (769-1024px)
