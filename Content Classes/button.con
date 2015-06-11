@@ -1,0 +1,15 @@
+anc_link - button link
+stf_eventTracking - button link event tracking
+opt_float - option to float right or left
+img_image - icon image (transparent PNG)
+stf_text - button text
+
+Code
+<div class="buttonW">
+    <a href="<%anc_link%>" <%stf_eventTracking%>>
+    <div class="buttons <%opt_float%>">
+        <!IoRangeConditional><img src="<%img_image%>"><!/IoRangeConditional>
+        <p><%stf_text%></p>
+    </div>
+    </a>
+</div>

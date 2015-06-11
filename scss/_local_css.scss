@@ -31,7 +31,6 @@
 
 // Backgrounds and Sprite Sheets
   $background-d: url('http://www.brooklyn.cuny.edu/web/adm_2013marketing/logobar.png'); 
-  $SpriteSheet: url('http://www.brooklyn.cuny.edu/web/sup_foundation/BOB_spriteSheet_400x142.png');
 
 // Colors
   $color-maroon: #781a42; //#7c2142 BCF
@@ -59,7 +58,6 @@
   $color-blue: #3b7ddb;
   $color-red: #d30043;
   $color-orange: #e34913;
-
 
 // Line Styles
   $thick-maroon: 8px solid $color-maroon; 
@@ -115,9 +113,6 @@ header {
 
 	}
 }
-
-
-
 
 // Content
 .content { // content

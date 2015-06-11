@@ -10,6 +10,7 @@ opt_robots - hide from SEO
 con_headerScripts - header scripts
 con_header - visual header
 con_content - content sections
+con_buttonbar - visual button bar
 con_footer - visual footer 
 con_footerScripts - footer scripts
 
@@ -30,10 +31,13 @@ Code
     <meta name="keywords" content="<%text_keywords%>" />
     <meta name="description" content="<%text_description%>" />
 
+    <link rel="home" href="http://www.brooklyn.cuny.edu/web/about/administration/enrollment/esc.php" />
+    <link rel="canonical" href="<%info_pageURL%>" />
+
     <link rel="shortcut icon" type="image/ico" href="<%img_favicon%>" />
 
     <!-- FB OG protocol -->
-    <meta property="og:title" content="Brooklyn College | <%headline_parent%>" />
+    <meta property="og:title" content="Brooklyn College Foundation | <%headline_parent%>" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="<%info_pageURL%>" />
@@ -62,8 +66,7 @@ Code
     </header>
 
     <section class="content">
-
-Red Dots
+    
     <!IoRangeRedDotMode><section class="row"><div class="large-12 columns" style="padding: 150px 0px 0px 0px;"><!/IoRangeRedDotMode>
     <!IoRangeRedDotMode><!IoRedDotOpenPage><!IoRangeNoEditMode><span style="color:red">Open Page</span><br/><br/><!/IoRangeNoEditMode>
     <!IoRangeRedDotEditOnly><span style="color:red">Close Page</span><br/><br/><!/IoRangeRedDotEditOnly><!/IoRangeRedDotMode>
@@ -72,14 +75,18 @@ Red Dots
         <!IoRedDot_stf_title><span style="color:red">Add/Edit Page Title</span></br>
         <!IoRedDot_con_content><span style="color:red">Add/Edit/Order Content Sections</span><!/IoRangeRedDotEditOnly>
     <!IoRangeRedDotMode></div></section><!/IoRangeRedDotMode>
-
-Code    
     <%con_content%>
     </section>
 
-    <footer>
+    <!-- buttons -->
+    <div class="full-width buttonbar">
+    <%con_buttonbar%>
+    </div>
+    
+    <!-- footer -->
+    <div class="full-width footerbar">
     <%con_footer%>
-    </footer>
+    </div>
     
     <%con_footerScripts%>
 

@@ -1,0 +1,18 @@
+anc_link - button link
+stf_eventTracking - button link event tracking
+stf_alt - ALT and TITLE text
+img_imgMicro - images for < 500px
+img_imgSmall - images for 500 > image < 752
+img_imgMedium - images for 753 > image < 1024
+img_imgLarge - images for 1025 > image < 1400
+
+Code
+<a href="<%anc_link%>" <%stf_eventTracking%>>
+<img src="http://www.brooklyn.cuny.edu/web/adm_2013marketing/trans.gif" 
+    alt="<%stf_alt%>" title="<%stf_alt%>"
+    data-src0="<%img_imgMicro%>"
+    data-src500="<%img_imgSmall%>"
+    data-src768="<%img_imgMedium%>" 
+    data-src1020="<%img_imgLarge%>" />
+</a>
+ 

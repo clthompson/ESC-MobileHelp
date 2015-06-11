@@ -1,0 +1,12 @@
+img_logo - Brooklyn College logo
+
+Code
+<div class="full-width headerbar">
+    <header class="row">
+      	<div class="small-6 small-centered columns">
+        	<div class="sectionObject">
+          		<img class="logoimg" src="<%img_logo%>" alt="Brooklyn College Logo"/>
+        	</div>
+     	</div>
+    </header>
+</div>

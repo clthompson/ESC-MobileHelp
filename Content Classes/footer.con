@@ -1,0 +1,21 @@
+img_cuny - CUNY logo
+stf_copyright - copyright holder (not date)
+txt_address - address content
+
+Code
+<footer class="row">
+    <div class="small-12 columns">
+    	<div class="sectionObject">
+    		<div ID="cunyBC">
+    			<div ID="CUNY"> 
+    				<img src="<%img_cuny%>" alt="CUNY Logo"/>
+    			</div>
+    			<div ID="address">    
+    				<p>&copy; <script>document.write(new Date().getFullYear())</script> <%stf_copyright%></p>
+        			<%txt_address%>
+   				</div>
+        	</div>
+    	</div>
+    </div>
+</footer>
+ 
